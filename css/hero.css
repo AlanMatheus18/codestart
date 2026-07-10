@@ -1,0 +1,6 @@
+.hero {
+ background-image: url("../src/assets/fundohero.png");
+    min-height:80vh;
+    background-size:cover;
+    background-position:center;
+}
