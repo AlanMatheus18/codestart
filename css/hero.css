@@ -1,6 +1,100 @@
+main {
+    background-image: url("../src/assets/fundohero.png");
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+}
+
 .hero {
- background-image: url("../src/assets/fundohero.png");
-    min-height:80vh;
-    background-size:cover;
-    background-position:center;
+    width: 500px;
+    margin-left: var(--space-lg);
+    color: var(--color-white);
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+}
+
+span {
+    color: var(--color-accent);
+}
+
+.hero p{
+    font-size: 18px;
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    margin-bottom: var(--space-md);
+}
+
+.call{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.arrow-right{
+    filter: invert(100%) 
+    
+}
+
+.call-action{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.call-action a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid var(--color-white);
+    padding: 15px 20px;
+    border-radius: var(--radius-md);
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icon-1, .icon-2, .icon-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.icon-1 h2, .icon-2 h2, .icon-3 h2{
+    font-size: 15px;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    
+}
+
+.icon-1 p, .icon-2 p, .icon-3 p{
+    font-size: 15px;
+    font-weight: 200;
+    width: 220px;
+}
+
+.icon-img{
+    filter: invert(32%) sepia(92%) saturate(1988%) hue-rotate(233deg) brightness(95%) contrast(92%);
+    margin-bottom: 40px;
+    
 }

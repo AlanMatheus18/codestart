@@ -1,0 +1,19 @@
+:root {
+  --color-bg: #040d22;
+  --color-primary: #2563eb;
+  --color-white: #ffffff;
+  --color-accent: #6c63ff;
+
+  --font-sans: 'Montserrat', sans-serif;
+  --font-display: 'Orbitron', sans-serif;
+
+  --space-sm: 20px;
+  --space-md: 30px;
+  --space-lg: 100px;
+  --btn-padding: 10px 20px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+
+  --icon-size: 50px;
+}
