@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
 
     padding: 20px 40px;
-    background-color: #040d22;
+    background-color: var(--color-bg);
 
     box-sizing: border-box;
 }
@@ -22,11 +22,11 @@ header {
 }
 
 .logo h1 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--font-display);
     font-size:26px ;
     font-weight: 700;
     /* color: #2563eb; */
-    color: #ffffff;
+    color: var(--color-primary);
 }
 
 nav ul{
@@ -38,8 +38,8 @@ nav ul{
 
 li a{
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var( --font-sans);
     font-size: 15px;
     font-weight: 500;
-    color: #ffffff;
+    color: var(--color-white);
 }

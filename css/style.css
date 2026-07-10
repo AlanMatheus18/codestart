@@ -4,20 +4,20 @@
     justify-content: center;
 
     width: 50px;
-    height: 50px;
+    height: var(--icon-size);
 /* 
     background-color: #111827; */
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 
-    color: #2563eb;
+    color: var(--color-primary);
 }
 
 .btn-hero {
-    padding: 10px 20px;
+    padding: var(--btn-padding);
     border-radius: 8px;
-    background-color: #2563eb;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-sans);
     font-size: 15px;
     font-weight: 500;
     border: none;

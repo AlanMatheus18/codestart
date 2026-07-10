@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Document</title>
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -43,33 +45,45 @@
         <button class="btn-hero">Inscreva-se</button>
     </header>
 
-    <main>
-        <section class="hero" id="home">
+    <main id="home">
+        <section class="hero">
             <div class="hero-text">
 
                 <h1>Aprenda programação do <span>zero ao avançado</span></h1>
                 <p>Cursos práticos, projetos reais e um metodo que já transformou milhares de vidas.</p>
             </div>
             <div class="call-action">
-                <button>Inscreva-se agora -></button>
+                <button class="btn-hero call">Inscreva-se agora <img class="arrow-right" width="24" height="24"
+                        src="https://img.icons8.com/forma-light/24/right.png" alt="right" /></button>
                 <a href="#">Saiba mais</a>
+
             </div>
 
             <section class="icons">
                 <div class="icon-1">
-                    <img src="" alt="">
-                    <h2>Cursos completos</h2>
-                    <p>Do básico ao avançado</p>
+                    <img class="icon-img" width="30" height="30"
+                        src="https://img.icons8.com/forma-light/24/open-book.png" alt="open-book" />
+                    <div class="info-icon">
+                        <h2>Cursos completos</h2>
+                        <p>Do básico ao avançado</p>
+                    </div>
+
                 </div>
                 <div class="icon-2">
-                    <img src="" alt="">
-                    <h2>Certificado</h2>
-                    <p>Certificado reconhecido pelo mercado</p>
+                    <img class="icon-img" width="30" height="30" src="https://img.icons8.com/forma-light/24/prize.png"
+                        alt="prize" />
+                    <div class="info-icon">
+                        <h2>Certificado</h2>
+                        <p>Reconhecido pelo mercado</p>
+                    </div>
                 </div>
                 <div class="icon-3">
-                    <img src="" alt="">
-                    <h2>Suporte</h2>
-                    <p>Acompanhamento exclusivo</p>
+                    <img class="icon-img" width="30" height="30" src="https://img.icons8.com/forma-light/24/group.png"
+                        alt="group" />
+                    <div class="info-icon">
+                        <h2>Suporte</h2>
+                        <p>Acompanhamento exclusivo</p>
+                    </div>
                 </div>
             </section>
         </section>
