@@ -1,11 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <title>Document</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-    
-</body>
+    <header>
+        <div class="logo">My Logo</div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn">Inscreva-se</button>
+    </header>
+
+    <main>
+        <section class="main">
+            <h1>Aprenda programação do <span>zero ao avançado</span></h1>
+            <p>Cursos práticos, projetos reais e um metodo que já transformou milhares de vidas.</p>
+        </section>
+        <div class="call-action">
+            <button>Inscreva-se agora -></button>
+            <a href="#">Saiba mais</a>
+        </div>
+
+        <section class="icons">
+            <div class="icon-1">
+                <img src="" alt="">
+                <h2>Cursos completos</h2>
+                <p>Do básico ao avançado</p>
+            </div>
+            <div class="icon-2">
+                <img src="" alt="">
+                <h2>Certificado</h2>
+                <p>Certificado reconhecido pelo mercado</p>
+            </div>
+            <div class="icon-3">
+                <img src="" alt="">
+                <h2>Suporte</h2>
+                <p>Acompanhamento exclusivo</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="section-sobre">
+        <h2>Por que estudar na <span>CodeStart?</span></h2>
+        <div class="icons-about">
+            <div class="icon-about-1">
+                <img src="" alt="">
+                <h3>Metodo prático</h3>
+                <p>Aprenda fazendo, com projetos reais e desafios práticos.</p>
+            </div>
+
+            <div class="icon-about-2">
+                <img src="" alt="">
+                <h3>Comunidade</h3>
+                <p>Participe de um ambiente de aprendizado colaborativo.</p>
+            </div>
+
+            <div class="icon-about-3">
+                <img src="" alt="">
+                <h3>Suporte</h3>
+                <p>Receba suporte e orientação de instrutores experientes.</p>
+            </div>
+
+            <div class="icon-about-4">
+                <img src="" alt="">
+                <h3>Certificação</h3>
+                <p>Obtenha certificados reconhecidos pelo mercado.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cursos">
+        <h2>Nossos <span>Cursos</span> </h2>
+        <p>Formacoes completas para voce se tornar um desenvolvedor de sucesso.</p>
+
+        <div class="cursos">
+            <div class="web">
+                <img src="" alt="">
+                <p>Aprenda a criar paginas web modernas e responsivas.</p>
+                <a href="">Saiba mais</a>
+            </div>
+
+            <div class="javascript">
+                <img src="" alt="">
+                <p>Domine a linguagem JavaScript que torna os sites interativos.</p>
+                <a href="">Saiba mais</a>
+            </div>
+
+            <div class="react">
+                <img src="" alt="">
+                <p>Crie aplicacoes web rápidas e escaláveis com React.</p>
+                <a href="">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-depoimentos">
+        <h2>O que nossos alunos dizem</h2>
+        <div class="depoimentos">
+            <div class="depoimento1">
+                <p>"O curso me proporcionou uma base sólida em programação e me ajudou a conseguir meu primeiro emprego
+                    na área."</p>
+                <div class="perfil">
+                    <img src="" alt="">
+                    <div class="sobre-perfil">
+                        <h3>João Silva</h3>
+                        <p>Desenvolvedor Front-end</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="depoimento2">
+                <p>"A metodologia prática do curso me permitiu aplicar o conhecimento em projetos reais, o que foi
+                    fundamental para meu crescimento profissional."</p>
+                <div class="perfil">
+                    <img src="" alt="">
+                    <div class="sobre-perfil">
+                        <h3>Maria Souza</h3>
+                        <p>Desenvolvedora Full Stack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contato">
+        <h2>Faca sua <span>inscricao</span></h2>
+        <p>Preencha o formulario e garanta sua vaga na proxima turma.</p>
+        <i data-lucide="users-round"></i>
+        <p>Vagas limitadas!</p>
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Nome" id="nome">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email">
+            <label for="cep">Cep:</label>
+            <input type="text" placeholder="00000-000" id="cep">
+            <label for="rua">Rua:</label>
+            <input type="text" placeholder="Rua" id="rua">
+            <label for="bairro">Bairro:</label>
+            <input type="text" placeholder="Bairro" id="bairro">
+            <label for="cidade">Cidade:</label>
+            <input type="text" placeholder="Cidade" id="cidade">
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+            <button>Enviar inscricao</button>
+        </form>
+
+        <footer>
+            <div class="secao-footer">
+
+                <div class="logo-footer">
+                    <img src="" alt="">
+                    <h2>CodeStart</h2>
+                    <p>transformando vidas atraves da tecnologia</p>
+                </div>
+                <div class="redes-sociais">
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="github"></i></a>
+                </div>
+                <div class="navegacao-site">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Cursos</a>
+                    <a href="#">Depoimentos</a>
+                    <a href="#">Contato</a>
+                </div>
+
+                <div class="cursos">
+                    <a href="#">Curso Web</a>
+                    <a href="#">Curso JavaScript</a>
+                    <a href="#">Curso React</a>
+                </div>
+
+                <div class="contato">
+                    <i data-lucide="mail"></i>
+                    <p>Email:matheusalan334@gmail.com</p>
+                    <i data-lucide="phone"></i>
+                    <p>Telefone: (81) 1234-5678</p>
+                    <i data-lucide="map-pin"></i>
+                    <p>Endereco: Rua Exemplo, 123 - Cidade, Estado</p>
+                </div>
+            </div>
+            <p>&copy;2026 CodeStart. Todos os direitos reservados.</p>
+        </footer>
+        </main>
+
+        <script src="./js/main.js">
+            lucide.createIcons();
+        </script>
+
 </html>
