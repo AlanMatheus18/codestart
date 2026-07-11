@@ -4,14 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/import.css">
     <title>Document</title>
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -93,27 +86,39 @@
         <h2>Por que estudar na <span>CodeStart?</span></h2>
         <div class="icons-about">
             <div class="icon-about-1">
-                <img src="" alt="">
+                <div class="icon-circle1">
+                    <img class="img-about1" width="40" height="40" src="https://img.icons8.com/ios-filled/50/rocket.png"
+                        alt="rocket" />
+                </div>
                 <h3>Metodo prático</h3>
-                <p>Aprenda fazendo, com projetos reais e desafios práticos.</p>
+                <p>Aprenda fazendo projetos reais desde o inicio.</p>
             </div>
 
             <div class="icon-about-2">
-                <img src="" alt="">
+                <div class="icon-circle2">
+                    <img class="img-about2" width="40" height="40" src="https://img.icons8.com/ios-glyphs/30/group.png"
+                        alt="group" />
+                </div>
                 <h3>Comunidade</h3>
                 <p>Participe de um ambiente de aprendizado colaborativo.</p>
             </div>
 
             <div class="icon-about-3">
-                <img src="" alt="">
-                <h3>Suporte</h3>
-                <p>Receba suporte e orientação de instrutores experientes.</p>
+                <div class="icon-circle3">
+                    <img class="img-about3" width="40" height="40" src="https://img.icons8.com/sf-black/64/goal.png"
+                        alt="goal" />
+                </div>
+                <h3>Foco no mercado</h3>
+                <p>Conteudo alinhado com o que as empresas realmente pedem.</p>
             </div>
 
             <div class="icon-about-4">
-                <img src="" alt="">
-                <h3>Certificação</h3>
-                <p>Obtenha certificados reconhecidos pelo mercado.</p>
+                <div class="icon-circle4">
+                    <img class="img-about4" width="40" height="40"
+                        src="https://img.icons8.com/ios-glyphs/30/lightning-bolt--v1.png" alt="lightning-bolt--v1" />
+                </div>
+                <h3>Acesso vitalício</h3>
+                <p>Estude no seu tempo, quando e onde quiser.</p>
             </div>
         </div>
     </section>
@@ -223,7 +228,7 @@
             </select>
             <label for="mensagem">Mensagem:</label>
             <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
-            <button>Enviar inscricao</button>
+            <button class="btn-form" type="button">Enviar inscricao</button>
         </form>
     </section>
 
