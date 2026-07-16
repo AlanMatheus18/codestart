@@ -12,6 +12,9 @@ header {
     background-color: var(--color-bg);
 
     box-sizing: border-box;
+
+    min-height: 80px;
+    z-index: 1000;
 }
 
 .logo{
@@ -29,17 +32,26 @@ header {
     color: var(--color-primary);
 }
 
-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+
+.nav-link{
+   font-family: var( --font-sans);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-white); 
 }
 
-li a{
+#link{
+    color: white;
+}
+
+#link:hover{
+    color: #b0b0b0;
+}
+
+/* li a{
     text-decoration: none;
     font-family: var( --font-sans);
     font-size: 15px;
     font-weight: 500;
     color: var(--color-white);
-}
+} */
