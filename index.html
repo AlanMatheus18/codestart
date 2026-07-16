@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/import.css">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,16 +30,16 @@
         </div>
 
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cursos">Cursos</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link active" id="link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" id="link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link active" id="link" href="#cursos">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link active" id="link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav-item"><a class="nav-link active" id="link" href="#contato">Contato</a></li>
             </ul>
         </nav>
 
-        <button class="btn-hero">Inscreva-se</button>
+        <button class="btn btn-primary" id="btn-header">Inscreva-se</button>
     </header>
 
     <main id="home">
@@ -46,39 +50,39 @@
                 <p>Cursos práticos, projetos reais e um metodo que já transformou milhares de vidas.</p>
             </div>
             <div class="call-action">
-                <button class="btn-hero call">Inscreva-se agora <img class="arrow-right" width="24" height="24"
-                        src="https://img.icons8.com/forma-light/24/right.png" alt="right" /></button>
-                <a href="#">Saiba mais</a>
+                <button class="btn btn-primary" id="btn-header">Inscreva-se agora <img class="arrow-right" width="24"
+                        height="24" src="https://img.icons8.com/forma-light/24/right.png" alt="right" /></button>
+                <a href="#" class="btn btn-outline-secondary">Saiba mais</a>
 
             </div>
 
-            <section class="icons">
-                <div class="icon-1">
-                    <img class="icon-img" width="30" height="30"
-                        src="https://img.icons8.com/forma-light/24/open-book.png" alt="open-book" />
-                    <div class="info-icon">
-                        <h2>Cursos completos</h2>
-                        <p>Do básico ao avançado</p>
-                    </div>
+        </section>
+        <section class="icons">
+            <div class="icon-item">
+                <img class="icon-img" width="40" height="40"
+                    src="https://img.icons8.com/forma-light/24/open-book.png" alt="open-book" />
+                <div class="info-icon">
+                    <h2>Cursos completos</h2>
+                    <p>Do básico ao avançado</p>
+                </div>
 
+            </div>
+            <div class="icon-item">
+                <img class="icon-img" width="40" height="40" src="https://img.icons8.com/forma-light/24/prize.png"
+                    alt="prize" />
+                <div class="info-icon">
+                    <h2>Certificado</h2>
+                    <p>Reconhecido pelo mercado</p>
                 </div>
-                <div class="icon-2">
-                    <img class="icon-img" width="30" height="30" src="https://img.icons8.com/forma-light/24/prize.png"
-                        alt="prize" />
-                    <div class="info-icon">
-                        <h2>Certificado</h2>
-                        <p>Reconhecido pelo mercado</p>
-                    </div>
+            </div>
+            <div class="icon-item">
+                <img class="icon-img" width="40" height="40" src="https://img.icons8.com/forma-light/24/group.png"
+                    alt="group" />
+                <div class="info-icon">
+                    <h2>Suporte</h2>
+                    <p>Acompanhamento exclusivo</p>
                 </div>
-                <div class="icon-3">
-                    <img class="icon-img" width="30" height="30" src="https://img.icons8.com/forma-light/24/group.png"
-                        alt="group" />
-                    <div class="info-icon">
-                        <h2>Suporte</h2>
-                        <p>Acompanhamento exclusivo</p>
-                    </div>
-                </div>
-            </section>
+            </div>
         </section>
     </main>
 
@@ -129,19 +133,19 @@
 
         <div class="cursos">
             <div class="web">
-                <img src="" alt="">
+                <img src="./src/assets/curos1.png" alt="">
                 <p>Aprenda a criar paginas web modernas e responsivas.</p>
                 <a href="">Saiba mais</a>
             </div>
 
             <div class="javascript">
-                <img src="" alt="">
+                <img src="./src/assets/curso2.png" alt="">
                 <p>Domine a linguagem JavaScript que torna os sites interativos.</p>
                 <a href="">Saiba mais</a>
             </div>
 
             <div class="react">
-                <img src="" alt="">
+                <img src="./src/assets/curso3.png" alt="">
                 <p>Crie aplicacoes web rápidas e escaláveis com React.</p>
                 <a href="">Saiba mais</a>
             </div>
@@ -149,31 +153,53 @@
     </section>
 
     <section class="section-depoimentos" id="depoimentos">
-        <h2>O que nossos alunos dizem</h2>
+        <h2>O que nossos <span>alunos</span> dizem</h2>
         <div class="depoimentos">
-            <div class="depoimento1">
-                <p>"O curso me proporcionou uma base sólida em programação e me ajudou a conseguir meu primeiro emprego
-                    na área."</p>
-                <div class="perfil">
-                    <img src="" alt="">
-                    <div class="sobre-perfil">
-                        <h3>João Silva</h3>
-                        <p>Desenvolvedor Front-end</p>
+
+            <div class="card testimonial-card">
+                <div class="card-body">
+
+                    <div class="quote-icon">❝</div>
+
+                    <p class="card-text">
+                        O curso me proporcionou uma base sólida em programação e me ajudou a conseguir meu primeiro
+                        emprego na área.
+                    </p>
+
+                    <div class="perfil d-flex align-items-center">
+                        <img src="img/joao.jpg" alt="João Silva" class="rounded-circle">
+
+                        <div class="sobre-perfil ms-3">
+                            <h5>João Silva</h5>
+                            <p>Desenvolvedor Front-end</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
-            <div class="depoimento2">
-                <p>"A metodologia prática do curso me permitiu aplicar o conhecimento em projetos reais, o que foi
-                    fundamental para meu crescimento profissional."</p>
-                <div class="perfil">
-                    <img src="" alt="">
-                    <div class="sobre-perfil">
-                        <h3>Maria Souza</h3>
-                        <p>Desenvolvedora Full Stack</p>
+            <div class="card testimonial-card">
+                <div class="card-body">
+
+                    <div class="quote-icon">❝</div>
+
+                    <p class="card-text">
+                        A metodologia prática do curso me permitiu aplicar o conhecimento em projetos reais, o que foi
+                        fundamental para meu crescimento profissional.
+                    </p>
+
+                    <div class="perfil d-flex align-items-center">
+                        <img src="img/maria.jpg" alt="Maria Souza" class="rounded-circle">
+
+                        <div class="sobre-perfil ms-3">
+                            <h5>Maria Souza</h5>
+                            <p>Desenvolvedora Full Stack</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 

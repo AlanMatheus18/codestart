@@ -1,0 +1,60 @@
+.section-depoimentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+
+}
+
+.section-depoimentos h2 {
+     font-size: 2.5rem;
+    font-weight: bold;
+    font-family: var(--font-sans);
+    padding: 1rem 0;
+}
+
+.depoimentos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 360px;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    padding: 10px;
+}
+
+.quote-icon {
+    font-size: 45px;
+    color: #c4b5fd;
+    line-height: 1;
+}
+
+.card-text {
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.perfil img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.sobre-perfil h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sobre-perfil p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}

@@ -1,13 +1,14 @@
 main {
     background-image: url("../src/assets/fundohero.png");
-    min-height: 60vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     padding-top: 240px;
 }
 
 .hero {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin-left: var(--space-lg);
     color: var(--color-white);
 }
@@ -24,32 +25,31 @@ span {
     color: var(--color-accent);
 }
 
-.hero p{
+.hero p {
     font-size: 18px;
     font-family: var(--font-sans);
     line-height: 1.5;
     margin-bottom: var(--space-md);
 }
 
-.call{
+/* .call{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+} */
+
+.arrow-right {
+    filter: invert(100%)
 }
 
-.arrow-right{
-    filter: invert(100%) 
-    
-}
-
-.call-action{
+/* .call-action{
     display: flex;
     align-items: center;
     gap: 20px;
-}
+} */
 
-.call-action a{
+.call-action a {
     color: var(--color-white);
     text-decoration: none;
     font-family: var(--font-sans);
@@ -60,41 +60,55 @@ span {
     border-radius: var(--radius-md);
 }
 
-.icons{
+.icons {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 30px 80px 0;
+    color: var(--color-white);
+    font-family: var(--font-sans);
+
 }
 
-.info-icon{
+.info-icon {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
-.icon-1, .icon-2, .icon-3{
+.icon-item {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    flex: 1;
+
 }
 
-.icon-1 h2, .icon-2 h2, .icon-3 h2{
+.icon-item h2 {
     font-size: 15px;
     font-family: var(--font-sans);
     font-weight: 500;
-    
+
 }
 
-.icon-1 p, .icon-2 p, .icon-3 p{
+.icon-item p {
     font-size: 15px;
     font-weight: 200;
-    width: 220px;
+    max-width: 220px;
 }
 
-.icon-img{
+.icon-img {
     filter: invert(32%) sepia(92%) saturate(1988%) hue-rotate(233deg) brightness(95%) contrast(92%);
     margin-bottom: 40px;
-    
+}
+
+.btn.btn-outline-secondary:hover {
+    background-color: rgba(108, 117, 125, 0.05);
+    border: 1px solid var(--color-white);
+    color: #6c757d;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 500;
 }

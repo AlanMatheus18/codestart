@@ -1,0 +1,177 @@
+/* MAIN */
+@media (max-width: 768px) {
+    main {
+        background-image: url("../src/assets/fundomobile.png");
+        background-position: center;
+    }
+}
+
+/* HERO */
+@media (max-width: 1024px) {
+
+        .hero {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .call-action {
+        gap: 15px;
+    }
+
+    #btn-header,
+    .btn-outline-secondary {
+        font-size: 15px;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 768px) {
+    .call-action {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #btn-header,
+    .btn-outline-secondary {
+        flex-direction: column;
+        padding: 14px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .arrow-right {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    #btn-header,
+    .btn-outline-secondary {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+
+
+/* SOBRE */
+@media (max-width: 768px) {
+    .icons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .icons-about {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .icon-about-1,
+    .icon-about-2,
+    .icon-about-3,
+    .icon-about-4 {
+        width: 280px;
+    }
+
+    .section-sobre h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    .section-sobre {
+        padding: 3rem 1rem;
+    }
+
+    .section-sobre h2 {
+        font-size: 1.8rem;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+
+    .icons-about {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-about-1,
+    .icon-about-2,
+    .icon-about-3,
+    .icon-about-4 {
+         width: 280px;
+        margin: 0 auto;
+        
+    }
+
+    .icon-about-1 p,
+    .icon-about-2 p,
+    .icon-about-3 p,
+    .icon-about-4 p {
+        width: auto;
+        max-width: 250px;
+    }
+}
+
+
+/* Cursos */
+@media (max-width: 768px) {
+
+    .section-cursos {
+        padding: 3rem 1rem;
+    }
+
+    .section-cursos h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .section-cursos p {
+        text-align: center;
+    }
+
+    .cursos {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .web {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .javascript {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .react {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    
+}
