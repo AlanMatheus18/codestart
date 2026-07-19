@@ -32,22 +32,10 @@ span {
     margin-bottom: var(--space-md);
 }
 
-/* .call{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-} */
-
 .arrow-right {
     filter: invert(100%)
 }
 
-/* .call-action{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-} */
 
 .call-action a {
     color: var(--color-white);

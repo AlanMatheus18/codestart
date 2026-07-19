@@ -6,6 +6,7 @@
 
     .menu-toggle {
         display: flex;
+         z-index: 10001;
     }
 
     .nav-container {
@@ -19,6 +20,7 @@
         justify-content: center;
         gap: 40px;
         transition: left 0.4s ease;
+        z-index: 9999;
     }
 
     .nav-container.active {
@@ -39,11 +41,11 @@
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }
-    
+
     .menu-toggle.active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     .menu-toggle.active .bar:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
@@ -64,7 +66,7 @@ header {
     background-color: var(--color-bg, #1a1a1a);
     box-sizing: border-box;
     min-height: 80px;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .logo {
@@ -108,7 +110,7 @@ header {
         flex-direction: column;
         justify-content: center;
         padding: 15px 20px;
-        position: static; 
+        position: static;
     }
 
     .nav {
@@ -130,13 +132,14 @@ header {
     main {
         background-image: url("../src/assets/fundomobile.png");
         background-position: center;
+        padding-top: 120px;
     }
 }
 
 /* HERO */
 @media (max-width: 1024px) {
 
-        .hero {
+    .hero {
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -163,7 +166,7 @@ header {
         align-items: stretch;
         width: 100%;
         gap: 15px;
-        
+
     }
 
     #btn-header,
@@ -172,7 +175,7 @@ header {
         padding: 14px;
         justify-content: center;
         text-align: center;
-        
+
     }
 
     .arrow-right {
@@ -183,11 +186,12 @@ header {
 
 
 @media (max-width: 480px) {
+
     #btn-header,
     .btn-outline-secondary {
         font-size: 14px;
         padding: 12px;
-        
+
     }
 }
 
@@ -200,7 +204,7 @@ header {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
-        
+
     }
 
 
@@ -249,9 +253,9 @@ header {
     .icon-about-2,
     .icon-about-3,
     .icon-about-4 {
-         width: 280px;
+        width: 280px;
         margin: 0 auto;
-        
+
     }
 
     .icon-about-1 p,
@@ -300,7 +304,7 @@ header {
         max-width: 320px;
     }
 
-    
+
 }
 
 /* CONTATO */
@@ -308,7 +312,7 @@ header {
 
 @media (max-width: 900px) {
     .body-contato {
-        flex-direction: column; 
+        flex-direction: column;
         padding: 30px 20px;
     }
 
@@ -325,14 +329,97 @@ header {
     }
 
     form {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
-    .grid-col-2, 
-    .grid-col-1, 
+    .grid-col-2,
+    .grid-col-1,
     .grid-full {
-        grid-column: 1 / -1; 
+        grid-column: 1 / -1;
     }
 }
 
 
+/* FOOTER */
+
+
+@media (max-width: 1024px) {
+
+    footer {
+        padding: 50px 40px 20px;
+    }
+
+    .secao-footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .secao-footer .logo-footer {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .secao-footer .redes-sociais {
+        grid-column: auto;
+        grid-row: auto;
+        margin-top: 20px;
+    }
+}
+
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+    footer {
+        padding: 40px 20px 20px;
+    }
+
+    .secao-footer {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .secao-footer .logo-footer,
+    .secao-footer .redes-sociais,
+    .secao-footer .navegacao-site,
+    .secao-footer .cursos,
+    .secao-footer .contato {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .secao-footer .logo-footer h2 {
+        justify-content: center;
+    }
+
+    .secao-footer .redes-sociais {
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .secao-footer .navegacao-site,
+    .secao-footer .cursos {
+        align-items: center;
+    }
+
+    .secao-footer .contato {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+        row-gap: 10px;
+    }
+
+    .secao-footer .contato::before {
+        margin-bottom: 10px;
+    }
+
+    .secao-footer .contato i {
+        margin-top: 10px;
+    }
+
+    footer>p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
