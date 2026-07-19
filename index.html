@@ -221,7 +221,7 @@
                     <span>Vagas limitadas!</span>
                 </div>
             </div>
-            <form action="">
+            <form id="formulario">
                 <div class="input-group grid-col-2">
                     <label for="nome">Nome completo</label>
                     <input type="text" placeholder="Seu nome" id="nome">
@@ -290,7 +290,7 @@
                         placeholder="Conte um pouco sobre você e seus objetivos."></textarea>
                 </div>
 
-                <button class="btn-form grid-full" type="button">Enviar inscrição</button>
+                <button class="btn-form grid-full" type="submit">Enviar inscrição</button>
             </form>
         </div>
     </section>
@@ -304,10 +304,15 @@
                 <p>transformando vidas atraves da tecnologia</p>
             </div>
             <div class="redes-sociais">
-                <a href="#"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/facebook--v1.png" alt="facebook--v1"/></a>
-                <a href="#"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
-                <a href="#"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/linkedin.png" alt="linkedin"/></a>
-                <a href="#"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/github.png" alt="github"/></a>
+                <a href="#"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/facebook--v1.png"
+                        alt="facebook--v1" /></a>
+                <a href="#"><img width="48" height="48"
+                        src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
+                        alt="instagram-new--v1" /></a>
+                <a href="#"><img width="48" height="48"
+                        src="https://img.icons8.com/fluency-systems-regular/48/linkedin.png" alt="linkedin" /></a>
+                <a href="#"><img width="48" height="48"
+                        src="https://img.icons8.com/fluency-systems-regular/48/github.png" alt="github" /></a>
             </div>
             <div class="navegacao-site">
                 <a href="#">Home</a>
@@ -335,6 +340,13 @@
         <p>&copy;2026 CodeStart. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init({
+            publicKey: "qmuRN37x1ycw1MFQ1"
+        });
+    </script>
 
     <script type="module" src="./js/main.js"></script>
 
