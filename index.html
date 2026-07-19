@@ -29,7 +29,14 @@
             <h1>CodeStart</h1>
         </div>
 
-        <nav>
+        <!-- MOBILE -->
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav-container">
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link active" id="link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link active" id="link" href="#sobre">Sobre</a></li>
@@ -59,8 +66,8 @@
         </section>
         <section class="icons">
             <div class="icon-item">
-                <img class="icon-img" width="40" height="40"
-                    src="https://img.icons8.com/forma-light/24/open-book.png" alt="open-book" />
+                <img class="icon-img" width="40" height="40" src="https://img.icons8.com/forma-light/24/open-book.png"
+                    alt="open-book" />
                 <div class="info-icon">
                     <h2>Cursos completos</h2>
                     <p>Do básico ao avançado</p>
@@ -167,7 +174,7 @@
                     </p>
 
                     <div class="perfil d-flex align-items-center">
-                        <img src="img/joao.jpg" alt="João Silva" class="rounded-circle">
+                        <img src="./src/assets/testemonial01.png" alt="João Silva" class="rounded-circle">
 
                         <div class="sobre-perfil ms-3">
                             <h5>João Silva</h5>
@@ -189,7 +196,7 @@
                     </p>
 
                     <div class="perfil d-flex align-items-center">
-                        <img src="img/maria.jpg" alt="Maria Souza" class="rounded-circle">
+                        <img src="./src/assets/testemonial02.png" alt="Maria Souza" class="rounded-circle">
 
                         <div class="sobre-perfil ms-3">
                             <h5>Maria Souza</h5>
@@ -204,58 +211,88 @@
     </section>
 
     <section class="section-contato" id="contato">
-        <h2>Faca sua <span>inscricao</span></h2>
-        <p>Preencha o formulario e garanta sua vaga na proxima turma.</p>
-        <i data-lucide="users-round"></i>
-        <p>Vagas limitadas!</p>
-        <form action="">
-            <label for="nome">Nome:</label>
-            <input type="text" placeholder="Nome" id="nome">
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Email" id="email">
-            <label for="cep">Cep:</label>
-            <input type="text" placeholder="00000-000" id="cep">
-            <label for="rua">Rua:</label>
-            <input type="text" placeholder="Rua" id="rua">
-            <label for="bairro">Bairro:</label>
-            <input type="text" placeholder="Bairro" id="bairro">
-            <label for="cidade">Cidade:</label>
-            <input type="text" placeholder="Cidade" id="cidade">
-            <label for="estado">Estado:</label>
-            <select name="estado" id="estado">
-                <option value="">Selecione um estado</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select>
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
-            <button class="btn-form" type="button">Enviar inscricao</button>
-        </form>
+        <div class="body-contato">
+
+            <div class="section-left">
+                <h2>Faca sua <span>inscricao</span></h2>
+                <p>Preencha o formulario e garanta sua vaga na proxima turma.</p>
+                <div class="icon-contato">
+                    <i data-lucide="users-round"></i>
+                    <span>Vagas limitadas!</span>
+                </div>
+            </div>
+            <form action="">
+                <div class="input-group grid-col-2">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" placeholder="Seu nome" id="nome">
+                </div>
+                <div class="input-group grid-col-2">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="seu@email.com" id="email">
+                </div>
+                <div class="input-group grid-col-1">
+                    <label for="cep">CEP</label>
+                    <input type="text" placeholder="00000-000" id="cep">
+                </div>
+
+                <div class="input-group grid-col-2">
+                    <label for="rua">Rua</label>
+                    <input type="text" placeholder="Rua" id="rua">
+                </div>
+
+                <div class="input-group grid-col-1">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" placeholder="Bairro" id="bairro">
+                </div>
+
+                <div class="input-group grid-col-1">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" placeholder="Cidade" id="cidade">
+                </div>
+                <div class="input-group grid-col-1">
+
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado">
+                        <option value="">Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+                <div class="input-group grid-full">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem"
+                        placeholder="Conte um pouco sobre você e seus objetivos."></textarea>
+                </div>
+
+                <button class="btn-form grid-full" type="button">Enviar inscrição</button>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -299,8 +336,6 @@
     </footer>
 
 
-    <script src="./js/main.js">
-        lucide.createIcons();
-    </script>
+    <script type="module" src="./js/main.js"></script>
 
 </html>

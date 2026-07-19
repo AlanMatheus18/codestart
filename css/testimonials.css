@@ -12,6 +12,7 @@
     font-weight: bold;
     font-family: var(--font-sans);
     padding: 1rem 0;
+    text-align: center;
 }
 
 .depoimentos {
