@@ -1,0 +1,143 @@
+footer {
+    background-color: #030816;
+    color: #e2e8f0;
+    padding: 60px 80px 20px 80px;
+}
+
+
+.secao-footer {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1.5fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.secao-footer .logo-footer {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.secao-footer .logo-footer h2 {
+    color: #ffffff;
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.secao-footer .logo-footer > img {
+    display: none;
+}
+
+.secao-footer .logo-footer h2::before {
+    content: "</>";
+    color: #3b82f6;
+    font-weight: 900;
+}
+
+.secao-footer .logo-footer p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+.secao-footer .redes-sociais {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.secao-footer .redes-sociais a {
+    display: inline-block;
+}
+
+.secao-footer .redes-sociais img {
+    width: 24px;
+    height: auto;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    transition: all 0.3s ease;
+}
+
+.secao-footer .redes-sociais a:hover img {
+    filter: invert(53%) sepia(85%) saturate(3015%) hue-rotate(205deg) brightness(101%) contrast(96%);
+    transform: translateY(-3px);
+}
+
+
+.secao-footer .navegacao-site, 
+.secao-footer .cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.secao-footer .navegacao-site::before {
+    content: "Navegação";
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.secao-footer .cursos::before {
+    content: "Cursos";
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.secao-footer .navegacao-site a, 
+.secao-footer .cursos a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.secao-footer .navegacao-site a:hover, 
+.secao-footer .cursos a:hover {
+    color: #ffffff;
+}
+
+
+.secao-footer .contato {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 10px;
+}
+
+.secao-footer .contato::before {
+    content: "Contato";
+    grid-column: 1 / -1;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.secao-footer .contato i {
+    color: #3b82f6;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.secao-footer .contato p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+footer > p {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 12px;
+    border-top: 1px solid #1e293b;
+    padding-top: 20px;
+}
